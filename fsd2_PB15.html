@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    
+    <!-- Bootstrap CSS link (you can download it locally too) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Internal CSS for custom styling -->
+    <style>
+        /* Apply styles using class selector */
+        .custom-heading {
+            font-size: 24px;
+            color: #007bff;
+        }
+
+        /* Apply styles using ID selector */
+        #custom-paragraph {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Apply styles using tag selector */
+        p {
+            color: #333;
+        }
+
+        /* Apply styles using inline CSS */
+        .custom-button {
+            background-color: #28a745;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+        }
+
+        /* Apply styles using inline CSS */
+        .custom-button:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="custom-heading">Welcome to Our Website</h1>
+                <p id="custom-paragraph">We Love Cats and here we make a community that can safely talk about cats and play with cute cats.</p>
+                <p>Cats are the cutest and best animals to ever exist!! Meow !!</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-md-6">
+                <img src="image22.jfif" alt="Image" class="img-fluid" height="50 px">
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="container mt-4">
+        <h2>Our Community Resides in </h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>No. of Cat cafes</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Kute Kitty</td>
+                    <td>5</td>
+                    <td>Mumbai</td>
+                </tr>
+                <tr>
+                    <td>Rawrs & Meows</td>
+                    <td>7</td>
+                    <td>Pune</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Form Section -->
+    <div class="container mt-4">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <button type="submit" class="btn btn-success custom-button">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
